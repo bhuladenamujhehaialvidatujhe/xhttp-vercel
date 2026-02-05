@@ -1,15 +1,19 @@
 {
+  "version": 2,
   "rewrites": [
     {
-      "source": "/xhttp/:path*",
-      "destination": "http://bugscanx.deno.dev:444/xhttp/:path**"
+      "source": "/vless-xhttp/:path*",
+      "destination": "/api/proxy"
     }
   ],
   "headers": [
     {
-      "source": "/xhttp/:path*",
+      "source": "/vless-xhttp/:path*",
       "headers": [
-        { "key": "Cache-Control", "value": "no-store, max-age=0, must-revalidate" }
+        {
+          "key": "Cache-Control",
+          "value": "no-cache, no-store, must-revalidate"
+        }
       ]
     }
   ]
