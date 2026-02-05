@@ -2,8 +2,7 @@
   "rewrites": [
     {
       "source": "/xhttp/:path*",
-      "destination": "http
-://bugscanx.deno.dev/xhttp/:path**"
+      "destination": "http://bugscanx.deno.dev/xhttp/:path**"
     }
   ],
   "headers": [
